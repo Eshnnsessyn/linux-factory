@@ -1,0 +1,15 @@
+---
+- name: clone git repo to role directory
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: ensure roles directory exists
+      file:
+        path: 'roles'
+        state: directory
+    - name: clone the git repo into the directory
+      git:
+        repo: 'git@github.com:Eshnnsessyn/linux-factory-roles.git'
+        dest: 'roles'
+        version: master
+        force: yes
