@@ -11,5 +11,5 @@
       git:
         repo: 'git@github.com:Eshnnsessyn/linux-factory-roles.git'
         dest: 'roles'
-        version: master
+        version: main
         force: yes
