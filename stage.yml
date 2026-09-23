@@ -1,0 +1,16 @@
+---
+- name: Configure stage web servers
+  hosts: web
+  gather_facts: true
+  roles:
+    - role: common
+
+- name: Change hostname and /etc/hosts
+  hosts: web, db
+  gather_facts: true
+  roles:
+    - role: hostname
+
+
+
+
