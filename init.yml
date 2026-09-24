@@ -9,7 +9,7 @@
         state: directory
     - name: clone the git repo into the directory
       git:
-        repo: 'git@github.com:Eshnnsessyn/linux-factory-roles.git'
+        repo: 'git@github.com:Eshnnsessyn/lf-ansible-roles.git'
         dest: 'roles'
         version: main
         force: yes

@@ -1,16 +1,19 @@
 ---
+- name: Collect selected facts
+  hosts: all
+  gather_facts: false
+
+  tasks:
+  - name: Collect nw and hw facts
+    ansible.builtin.setup:
+      gather_subset:
+        - '!all'
+        - '!min'
+        - network
+        - hardware
+
 - name: Configure stage web servers
-  hosts: web
+  hosts: all
   gather_facts: true
   roles:
     - role: common
-
-- name: Change hostname and /etc/hosts
-  hosts: web, db
-  gather_facts: true
-  roles:
-    - role: hostname
-
-
-
-
