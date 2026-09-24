@@ -12,19 +12,8 @@
         - network
         - hardware
 
-#- name: Configure production web servers
-#  hosts: db
-#  gather_facts: true
-#  roles:
-#    - role: common
-
-- name: Configure Swapfile
+- name: Configure production web servers
   hosts: db
   gather_facts: true
-  vars_prompt:
-    - name: mode_output
-      prompt: 'Введите режим удаления (1 - авто, 2 - переменная):'
-      private: false
-      default: '2'
   roles:
-    - swaptrasher
+    - role: common
