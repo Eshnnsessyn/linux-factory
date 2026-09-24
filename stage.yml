@@ -19,7 +19,7 @@
     - role: common
 
 - name: Configure Swapfile
-  hosts: db
+  hosts: web
   gather_facts: true
   roles:
     - swaptrasher
