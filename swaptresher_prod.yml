@@ -12,9 +12,9 @@
         - network
         - hardware
 
-- name: Configure stage web servers
-  hosts: web
+- name: Configure Swapfile
+  hosts: db
   gather_facts: true
+  
   roles:
-    - role: common
-
+    - swaptrasher
