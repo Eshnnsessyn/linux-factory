@@ -16,6 +16,7 @@
 - name: Configure Swapfile
   hosts: db
   gather_facts: true
-  
+  become: true
+
   roles:
     - swaptrasher
