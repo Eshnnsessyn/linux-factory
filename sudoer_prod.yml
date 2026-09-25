@@ -1,6 +1,6 @@
 ---
 - name: add new user
-  hosts: dbb
+  hosts: db
   gather_facts: true
   become: true
 
