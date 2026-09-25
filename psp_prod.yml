@@ -3,5 +3,6 @@
   hosts: db
   gather_facts: true
   become: true
+
   roles:
   - role: push_ssh_pub
