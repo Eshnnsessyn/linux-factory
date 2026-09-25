@@ -1,0 +1,8 @@
+---
+- name: add new user
+  hosts: dbb
+  gather_facts: true
+  become: true
+
+  roles:
+  - role: addsudoer
