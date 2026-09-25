@@ -7,13 +7,5 @@ users:
     add_groups: sudo
     comment: admin
     add_ssh_pub: 1
-    path_to_pub: id_rsa.pub
+    path_to_pub: eshnnsessyn_rsa.pub
     is_sudoer: 1
-  - username: user
-    shell: /bin/bash
-    create_home: 1
-    add_groups:
-    comment: default user
-    add_ssh_pub: 0
-    path_to_pub:
-    is_sudoer: 0
