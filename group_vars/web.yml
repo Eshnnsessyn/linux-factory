@@ -1,5 +1,14 @@
 ---
 swap_size: 2G
+users:
+  - username: eshnnsessyn
+    shell: /bin/bash
+    create_home: 1
+    add_groups: sudo
+    comment: admin
+    add_ssh_pub: 1
+    path_to_pub: eshnnsessyn_rsa.pub
+    is_sudoer: 1
 packages:
   - git
   - zip
