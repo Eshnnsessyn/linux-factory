@@ -9,3 +9,7 @@ users:
     add_ssh_pub: 1
     path_to_pub: eshnnsessyn_rsa.pub
     is_sudoer: 1
+packages:
+  - mc
+  - htop
+  - rsync
