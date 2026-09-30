@@ -13,4 +13,4 @@ packages:
   - mc
   - htop
   - rsync
-#docker_user: eshnnsessyn
+docker_user: eshnnsessyn
